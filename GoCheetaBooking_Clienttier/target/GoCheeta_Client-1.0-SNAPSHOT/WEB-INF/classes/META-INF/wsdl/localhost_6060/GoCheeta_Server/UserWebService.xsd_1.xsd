@@ -1,0 +1,203 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.1-b419 (branches/2.3.1.x-7937; 2014-08-04T08:11:03+0000) JAXWS-RI/2.2.10-b140803.1500 JAXWS-API/2.2.11 JAXB-RI/2.2.10-b140802.1033 JAXB-API/2.2.12-b140109.1041 svn-revision#unknown. --><xs:schema xmlns:tns="http://gocheeta/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://gocheeta/">
+
+<xs:element name="addCustomer" type="tns:addCustomer"/>
+
+<xs:element name="addCustomerResponse" type="tns:addCustomerResponse"/>
+
+<xs:element name="addUserOrder" type="tns:addUserOrder"/>
+
+<xs:element name="addUserOrderResponse" type="tns:addUserOrderResponse"/>
+
+<xs:element name="getAllVehicle" type="tns:getAllVehicle"/>
+
+<xs:element name="getAllVehicleResponse" type="tns:getAllVehicleResponse"/>
+
+<xs:element name="getViewUsersBooks" type="tns:getViewUsersBooks"/>
+
+<xs:element name="getViewUsersBooksResponse" type="tns:getViewUsersBooksResponse"/>
+
+<xs:element name="hello" type="tns:hello"/>
+
+<xs:element name="helloResponse" type="tns:helloResponse"/>
+
+<xs:element name="loginAdmin" type="tns:loginAdmin"/>
+
+<xs:element name="loginAdminResponse" type="tns:loginAdminResponse"/>
+
+<xs:element name="loginCustomer" type="tns:loginCustomer"/>
+
+<xs:element name="loginCustomerResponse" type="tns:loginCustomerResponse"/>
+
+<xs:element name="loginDriver" type="tns:loginDriver"/>
+
+<xs:element name="loginDriverResponse" type="tns:loginDriverResponse"/>
+
+<xs:complexType name="getViewUsersBooks">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getViewUsersBooksResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:user" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="user">
+<xs:complexContent>
+<xs:extension base="tns:person">
+<xs:sequence>
+<xs:element name="order_Id" type="xs:int"/>
+<xs:element name="area_branch" type="xs:string" minOccurs="0"/>
+<xs:element name="city" type="xs:string" minOccurs="0"/>
+<xs:element name="description" type="xs:string" minOccurs="0"/>
+<xs:element name="distance" type="xs:string" minOccurs="0"/>
+<xs:element name="driver_mobile" type="xs:string" minOccurs="0"/>
+<xs:element name="drop_loction" type="xs:string" minOccurs="0"/>
+<xs:element name="feedback_id" type="xs:int"/>
+<xs:element name="option" type="xs:string" minOccurs="0"/>
+<xs:element name="order_email" type="xs:string" minOccurs="0"/>
+<xs:element name="pick_location" type="xs:string" minOccurs="0"/>
+<xs:element name="price" type="xs:string" minOccurs="0"/>
+<xs:element name="subject" type="xs:string" minOccurs="0"/>
+<xs:element name="time" type="xs:string" minOccurs="0"/>
+<xs:element name="v_type" type="xs:string" minOccurs="0"/>
+<xs:element name="vehicle_no" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+
+<xs:complexType name="person">
+<xs:sequence>
+<xs:element name="email" type="xs:string" minOccurs="0"/>
+<xs:element name="mobile" type="xs:string" minOccurs="0"/>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="hello">
+<xs:sequence>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="helloResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAllVehicle">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getAllVehicleResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:vehicle" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="vehicle">
+<xs:complexContent>
+<xs:extension base="tns:driver">
+<xs:sequence>
+<xs:element name="branch_name" type="xs:string" minOccurs="0"/>
+<xs:element name="vehical_Type" type="xs:string" minOccurs="0"/>
+<xs:element name="vehicle_model" type="xs:string" minOccurs="0"/>
+<xs:element name="vehicle_no" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+
+<xs:complexType name="driver">
+<xs:sequence>
+<xs:element name="branch" type="xs:string" minOccurs="0"/>
+<xs:element name="d_email" type="xs:string" minOccurs="0"/>
+<xs:element name="d_name" type="xs:string" minOccurs="0"/>
+<xs:element name="d_password" type="xs:string" minOccurs="0"/>
+<xs:element name="driver_mobile" type="xs:int"/>
+<xs:element name="time_type" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="loginCustomer">
+<xs:sequence>
+<xs:element name="email" type="xs:string" minOccurs="0"/>
+<xs:element name="password" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="loginCustomerResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addCustomer">
+<xs:sequence>
+<xs:element name="email" type="xs:string" minOccurs="0"/>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
+<xs:element name="mobile" type="xs:string" minOccurs="0"/>
+<xs:element name="password" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addCustomerResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addUserOrder">
+<xs:sequence>
+<xs:element name="mobile" type="xs:string" minOccurs="0"/>
+<xs:element name="order_email" type="xs:string" minOccurs="0"/>
+<xs:element name="pick_location" type="xs:string" minOccurs="0"/>
+<xs:element name="drop_loction" type="xs:string" minOccurs="0"/>
+<xs:element name="city" type="xs:string" minOccurs="0"/>
+<xs:element name="area_branch" type="xs:string" minOccurs="0"/>
+<xs:element name="distance" type="xs:string" minOccurs="0"/>
+<xs:element name="price" type="xs:string" minOccurs="0"/>
+<xs:element name="time" type="xs:string" minOccurs="0"/>
+<xs:element name="vehicle_no" type="xs:string" minOccurs="0"/>
+<xs:element name="v_type" type="xs:string" minOccurs="0"/>
+<xs:element name="driver_mobile" type="xs:string" minOccurs="0"/>
+<xs:element name="option" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addUserOrderResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="loginAdmin">
+<xs:sequence>
+<xs:element name="email" type="xs:string" minOccurs="0"/>
+<xs:element name="password" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="loginAdminResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="loginDriver">
+<xs:sequence>
+<xs:element name="email" type="xs:string" minOccurs="0"/>
+<xs:element name="password" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="loginDriverResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

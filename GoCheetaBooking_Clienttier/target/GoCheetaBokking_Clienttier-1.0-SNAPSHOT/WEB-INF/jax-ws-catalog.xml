@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:6060/GoCheeta_WebService/NewWebService?wsdl" uri="wsdl/localhost_6060/GoCheeta_WebService/NewWebService.wsdl"/>
+    <system systemId="http://localhost:6060/GoCheeta_WebService/NewWebService?xsd=1" uri="wsdl/localhost_6060/GoCheeta_WebService/NewWebService.xsd_1.xsd"/>
+    <system systemId="http://localhost:6060/GoCheeta_Server/UserWebService?wsdl" uri="wsdl/localhost_6060/GoCheeta_Server/UserWebService.wsdl"/>
+    <system systemId="http://localhost:6060/GoCheeta_Server/UserWebService?xsd=1" uri="wsdl/localhost_6060/GoCheeta_Server/UserWebService.xsd_1.xsd"/>
+    <system systemId="http://localhost:6060/GoCheeta_Server/NewWebService?wsdl" uri="wsdl/localhost_6060/GoCheeta_Server/NewWebService.wsdl"/>
+    <system systemId="http://localhost:6060/GoCheeta_Server/NewWebService?xsd=1" uri="wsdl/localhost_6060/GoCheeta_Server/NewWebService.xsd_1.xsd"/>
+    <system systemId="http://localhost:6060/GoCheeta_Server/DriverWebService?wsdl" uri="wsdl/localhost_6060/GoCheeta_Server/DriverWebService.wsdl"/>
+    <system systemId="http://localhost:6060/GoCheeta_Server/DriverWebService?xsd=1" uri="wsdl/localhost_6060/GoCheeta_Server/DriverWebService.xsd_1.xsd"/>
+</catalog>

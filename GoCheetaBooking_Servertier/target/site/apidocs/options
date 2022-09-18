@@ -1,0 +1,24 @@
+-classpath
+'C:/Users/kasunw/.m2/repository/org/glassfish/metro/webservices-rt/2.3/webservices-rt-2.3.jar;C:/Users/kasunw/.m2/repository/mysql/mysql-connector-java/8.0.29/mysql-connector-java-8.0.29.jar;C:/Users/kasunw/.m2/repository/com/google/protobuf/protobuf-java/3.19.4/protobuf-java-3.19.4.jar;C:/Users/kasunw/.m2/repository/javax/javaee-web-api/7.0/javaee-web-api-7.0.jar'
+-encoding
+'UTF-8'
+-protected
+-sourcepath
+'C:/Users/kasunw/Desktop/gocheeta/GoCheetaBooking_Servertier/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2022. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'C:/Users/kasunw/Desktop/gocheeta/GoCheetaBooking_Servertier/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'GoCheetaBooking_Servertier 1.0-SNAPSHOT API'
+-linkoffline
+'https://docs.oracle.com/javase/7/docs/api' 'C:/Users/kasunw/Desktop/gocheeta/GoCheetaBooking_Servertier/target/javadoc-bundle-options'
+-use
+-version
+-windowtitle
+'GoCheetaBooking_Servertier 1.0-SNAPSHOT API'
